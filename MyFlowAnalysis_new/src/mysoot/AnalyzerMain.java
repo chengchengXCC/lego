@@ -930,7 +930,8 @@ public class AnalyzerMain {
 		sootArgs.add("-output-format");
 		sootArgs.add("jimple");
 		sootArgs.add("-process-dir");
-		sootArgs.add("../test/bin");
+	//	sootArgs.add("../test/bin");
+		sootArgs.add("../LineFollower/bin");
 		sootArgs.add("-allow-phantom-refs");
 		sootArgs.add("-w");
 		String[] soot_args = new String[sootArgs.size()];
