@@ -94,8 +94,10 @@ public class AndroidSourceSinkSummary{
 		List<Integer> sourceIndexes = null;
 		//lejos fetch sample
 		sourceIndexes = new ArrayList<Integer>();
-		sourceIndexes.add(param0);
-		sourceSummary.put("<lejos.robotics.SampleProvider: void fetchSample(float[],int)>", sourceIndexes);
+		sourceIndexes.add(ret);
+		sourceSummary.put("<test: int get()>", sourceIndexes);
+		//sourceIndexes.add(param0);
+		//sourceSummary.put("<lejos.robotics.SampleProvider: void fetchSample(float[],int)>", sourceIndexes);
 	}
 	
 	public static void buildTestCallbackSourceSummary(){	
@@ -318,6 +320,8 @@ public class AndroidSourceSinkSummary{
 		//lejos setpower
 		sinkIndexes = new ArrayList<Integer>();
 		sinkIndexes.add(param0);
-		sinkSummary.put("<lejos.robotics.EncoderMotor: void setPower(int)>", sinkIndexes);
+		sinkIndexes.add(param1);
+		sinkSummary.put("<test: boolean inBounds(int,int)>", sinkIndexes);
+		//sinkSummary.put("<lejos.robotics.EncoderMotor: void setPower(int)>", sinkIndexes);
 	}
 }
