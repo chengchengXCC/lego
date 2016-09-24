@@ -112,6 +112,7 @@ public interface MyConstants {
 	
 	//This is the combination of SINKS and SOURCESs
 	public static String[] SENSITIVEAPICALLS = new String[]{
+		"<test: boolean inBounds(int,int)>",
 		"<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>",
 		//"<java.io.OutputStream: void write(byte[],int,int)>",
 		//"<java.io.OutputStream: void write(byte[])>",	
